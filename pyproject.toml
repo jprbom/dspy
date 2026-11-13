@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=77.0.1"]
+requires = ["setuptools>=84.2.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -31,7 +31,7 @@ dependencies = [
     "optuna>=3.4.0",
     "pydantic>=2.0",
     "magicattr>=0.1.6",
-    "litellm>=1.64.0",
+    "litellm>=1.109.1",
     "diskcache>=5.6.0",
     "json-repair>=0.30.0",
     "tenacity>=8.2.3",
@@ -56,15 +56,15 @@ dev = [
     "pytest-asyncio>=0.26.0",
     "ruff>=0.3.0",
     "pre-commit>=3.7.0",
-    "pillow>=10.1.0",
+    "pillow>=12.3.0",
     "datamodel_code_generator>=0.26.3",
     "build>=1.0.3",
-    "litellm>=1.64.0; sys_platform == 'win32'",
-    "litellm[proxy]>=1.64.0; sys_platform != 'win32'",
+    "litellm>=1.109.1; sys_platform == 'win32'",
+    "litellm[proxy]>=1.109.1; sys_platform != 'win32'",
 ]
 test_extras = [
     "mcp; python_version >= '3.10'",
-    "datasets>=2.14.6",
+    "datasets>=5.2.0",
     "pandas>=2.1.1",
     "optuna>=3.4.0",
     "langchain_core",
